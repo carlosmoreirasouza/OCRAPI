@@ -1,0 +1,4 @@
+plate-ocr-api/
+  app.py
+  requirements.txt
+  Dockerfile
