@@ -1,2 +1,18 @@
 pip install -r requirements.txt
 uvicorn app:app --reload --port 8000
+
+
+2) Apague o main.py quebrado
+
+No bash:
+
+rm -f /root/main.py
+
+colar o codigo
+
+4) Valide o arquivo (pra ter certeza)
+python3 -m py_compile /root/main.py
+
+5) Rode a API
+source /root/venv/bin/activate
+uvicorn main:app --host 0.0.0.0 --port 8000
